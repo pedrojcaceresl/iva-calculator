@@ -9,6 +9,7 @@ export class IvaService {
   constructor() {}
 
   public calculateIVA(amount: number, iva: DIVISOR_IVA): number {
-    return amount > 0 ? amount / iva : 0;
+    console.log(iva, amount)
+    return amount && iva > 0 ? amount / iva : 0;
   }
 }
