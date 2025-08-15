@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { IvaComponent } from './components/iva/iva.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [IvaComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('iva-calculator');
+  protected readonly title = signal('Calculadora IVA');
 }
